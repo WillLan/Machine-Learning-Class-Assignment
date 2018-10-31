@@ -14,7 +14,7 @@ The assignments of machine learning course for post-graduates at BUAA EE, 2018.
 
 1、在训练集上训练机器学习模型。
 
-2、在测试集上测试模型的性能。对于分类问题，给出测试准确度，对于回归问题，给出预测值与真实值的偏差。
+2、在测试集上测试模型的性能。
 
 3、提交实验报告与模型代码。
 
