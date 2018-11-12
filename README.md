@@ -23,9 +23,8 @@ The assignments of machine learning course for post-graduates at BUAA EE, 2018.
 ## 题目一：手写数字识别
 
 ### 数据文件
-数据文件分为训练集和测试集两部分：
-* 训练数据集（10类，共6万个数字）：以bmp格式存储在**TrainingSet.zip**每个文件名的第一个数字代表它的真实分类（label）。
-* 测试数据集（10类，共1万个数字）：以bmp格式存储在**TestSet.zip**每个文件名的第一个数字代表它的真实分类（label）。
+* 训练数据集（10类，共6万个数字）：以bmp格式存储在**1-Digit-TrainingSet.zip**每个文件名的第一个数字代表它的真实分类（label）。
+* 测试数据集（10类，共1万个数字）：以bmp格式存储在**1-Digit-TestSet.zip**每个文件名的第一个数字代表它的真实分类（label）。
 
 ![](/sample.png)
 
@@ -35,10 +34,8 @@ The assignments of machine learning course for post-graduates at BUAA EE, 2018.
 ## 题目二：医学图像检测（待定）
 
 ### 数据文件（待定）
-
-
-
-
+* 训练数据集（2类，共XX幅图像）：以bmp格式存储在**2-MedImage-TrainingSet.zip**每个文件名的第一个数字代表它的真实分类（label）。
+* 测试数据集（2类，共XX幅图像）：以bmp格式存储在**2-MedImage-TestSet.zip**每个文件名的第一个数字代表它的真实分类（label）。
 
 ### 性能指标
 最基本的指标是测试集上的分类准确度。考虑到本题目是二分类问题，且两种误判（无病判断成患病、患病判断成无病）带来的风险不同，因此为了全面反映分类器性能，还可以给出精确率、召回率或一些其他指标。
@@ -46,7 +43,6 @@ The assignments of machine learning course for post-graduates at BUAA EE, 2018.
 ## 题目三：图像显著性预测（待定）
 
 ### 数据文件
-数据文件分为训练集和测试集两部分：
 * 训练数据集（共1500幅待检测图像及1500幅对应的显著图）：以jpg格式存储在**3-Saliency-TrainingSet.zip**中。
 * 测试数据集（共500幅待检测图像及500幅对应的显著图）：以jpg格式存储在**3-Saliency-TestSet.zip**中。
 在每个数据集中，待检测图像为人眼直接观察的彩色图像，保存在**Stimuli**文件夹；对应的显著图为相同尺寸的灰度图像，颜色越亮的区域代表显著性越强，保存在**FIXATIONMAPS**文件夹。考虑到图像内容可能对结果产生影响，每个数据集都包括20种不同类型的图像，存放在20个文件夹中（如**Action**，**Affective**，**Art**……），以便对测试结果按类型进行分析。
