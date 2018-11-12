@@ -45,6 +45,7 @@ The assignments of machine learning course for post-graduates at BUAA EE, 2018.
 ### 数据文件
 * 训练数据集（共1600幅待检测图像及1600幅对应的显著图）：以jpg格式存储在**3-Saliency-TrainSet.zip**中。
 * 测试数据集（共400幅待检测图像及400幅对应的显著图）：以jpg格式存储在**3-Saliency-TestSet.zip**中。
+
 在每个数据集中，待检测图像为人眼直接观察的彩色图像，保存在**Stimuli**文件夹；对应的显著图为相同尺寸的灰度图像，颜色越亮的区域代表显著性越强，保存在**FIXATIONMAPS**文件夹。考虑到图像内容可能对结果产生影响，每个数据集都包括20种不同类型的图像，存放在20个文件夹中（如**Action**，**Affective**，**Art**……），因此分析结果时，既可以给出总体性能，又可以对按类型进行分析。
 
 ### 性能指标
