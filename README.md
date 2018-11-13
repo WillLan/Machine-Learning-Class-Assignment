@@ -46,7 +46,7 @@ The assignments of machine learning course for post-graduates at BUAA EE, 2018.
 ### 性能指标
 最基本的指标是测试集上的分类准确度。考虑到患病与无病样本数量不均等，且两种误判（无病判断成患病、患病判断成无病）带来的风险不同，因此为了全面反映分类器性能，还可以给出精确率、召回率或其他指标。
 
-## 题目三：图像显著性预测（待定）
+## 题目三：图像显著性预测
 
 ### 数据文件
 * 训练数据集（共1600幅待检测图像及1600幅对应的显著图）：以jpg格式存储在**3-Saliency-TrainSet.zip**中。
@@ -58,9 +58,15 @@ The assignments of machine learning course for post-graduates at BUAA EE, 2018.
 
 ### 性能指标
 
+相关系数（CC）、归一化扫视路径显著性（normalized scanpath saliency，NSS），或其他衡量显著性图像相似程度的指标等。
 
+## 数据获取
 
+对于全部数据，本课程的微信群提供百度云盘和DropBox两种下载方式。
 
+其中，题目一数据量较小，也可在此Github项目下载。
+
+所有途径下载后的文件相同，任选其一即可。
 
 ## 报告格式
 作业报告格式包含：  
