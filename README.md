@@ -39,6 +39,8 @@ The assignments of machine learning course for post-graduates at BUAA EE, 2018.
 * 训练数据集（2类，共1639幅图像）：以jpg格式存储在**2-MedImage-TrainSet.zip**。
 * 测试数据集（2类，共250幅图像）：以jpg格式存储在**2-MedImage-TestSet.zip**。
 
+![](/2--Example.png)
+
 每个数据集中，以disease开头的文件为患病图像，以normal开头的文件为无病图像。
 
 ### 性能指标
