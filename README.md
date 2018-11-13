@@ -62,11 +62,11 @@ The assignment of machine learning course for post-graduates at BUAA EE, 2018.
 
 ## 数据获取
 
-对于全部数据，本课程的微信群提供百度云盘和DropBox两种下载方式。
+百度云盘下载：https://pan.baidu.com/s/1mOCFxATcCkHGbK8Vdtv5yQ
 
-其中，题目一数据量较小，也可在此Github项目下载。
+DropBox下载：
 
-所有途径下载后的文件相同，任选其一即可。
+两种途径下载后文件相同，任选其一即可。
 
 ## 报告格式
 作业报告格式包含：  
