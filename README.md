@@ -1,5 +1,5 @@
-# ML-Class-Homework
-The assignments of machine learning course for post-graduates at BUAA EE, 2018.
+# ML-Class-Assignment
+The assignment of machine learning course for post-graduates at BUAA EE, 2018.
 
 **注：此稿为草稿，题目可能会有变动，最终内容将于11月14日确定。**
 
