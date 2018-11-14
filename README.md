@@ -1,8 +1,6 @@
 # ML-Class-Assignment
 The assignment of machine learning course for post-graduates at BUAA EE, 2018.
 
-**注：此稿为草稿，题目可能会有变动，最终内容将于11月14日确定。**
-
 ## 任务描述
 本学期的机器学习大作业包括三个题目：手写数字识别、医学图像检测以及图像显著性检测，任选其一完成即可。由于难度不同，每题设置了不同的最高分：
 
