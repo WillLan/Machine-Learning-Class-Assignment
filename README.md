@@ -56,7 +56,7 @@ The assignment of machine learning course for post-graduates at BUAA EE, 2018.
 
 ### 性能指标
 
-相关系数（CC），normalized scanpath saliency（NSS），或其他衡量显著性图像相似程度的指标等。
+相关系数（CC）、KL散度，或其他衡量显著性图像相似程度的指标等。
 
 ## 数据获取
 
