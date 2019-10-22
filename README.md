@@ -1,5 +1,5 @@
 # ML-Class-Assignment
-The assignment of machine learning course for post-graduates at BUAA EE, 2018.
+The assignment of machine learning course for post-graduates at BUAA EE, 2019.
 
 ## 任务描述
 本学期的机器学习大作业包括三个题目：手写数字识别、医学图像检测以及图像显著性检测，任选其一完成即可。由于难度不同，每题设置了不同的最高分：
@@ -24,7 +24,7 @@ The assignment of machine learning course for post-graduates at BUAA EE, 2018.
 * 训练数据集（10类，共6万个数字）：以bmp格式存储在**1-Digit-TrainSet.zip**。
 * 测试数据集（10类，共1万个数字）：以bmp格式存储在**1-Digit-TestSet.zip**。
 
-每个数据集中，每个文件名的第一个数字代表它的真实分类（label）。
+每个数据集中，每个文件名的第一个数字代表它的真实分类（label），即ground truth。
 
 ![](/1-Digit-Example.png)
 
@@ -42,7 +42,7 @@ The assignment of machine learning course for post-graduates at BUAA EE, 2018.
 每个数据集中，以disease开头的文件为患病图像，以normal开头的文件为无病图像。
 
 ### 性能指标
-最基本的指标是测试集上的分类准确度。考虑到患病与无病样本数量不均等，且两种误判（无病判断成患病、患病判断成无病）带来的风险不同，因此为了全面反映分类器性能，还可以给出精确率、召回率或其他指标。
+最基本的指标是测试集上的分类准确度。考虑到患病与无病样本数量不均等，且两种误判（无病判断成患病、患病判断成无病）带来的风险不同，因此为了全面反映分类器性能，还可以给出精确率、召回率（指标函数已给，在ROC文件夹中，代码使用详细见instruction.txt）或其他指标。
 
 ## 题目三：图像显著性预测
 
@@ -50,13 +50,14 @@ The assignment of machine learning course for post-graduates at BUAA EE, 2018.
 * 训练数据集（共1600幅待检测图像及1600幅对应的显著图）：以jpg格式存储在**3-Saliency-TrainSet.zip**中。
 * 测试数据集（共400幅待检测图像及400幅对应的显著图）：以jpg格式存储在**3-Saliency-TestSet.zip**中。
 
-每个数据集中，待检测图像为人眼直接观察的彩色图像，保存在**Stimuli**文件夹；对应的显著图为相同尺寸的灰度图像，颜色越亮的区域代表显著性越强，保存在**FIXATIONMAPS**文件夹。考虑到图像内容可能对结果产生影响，每个数据集都包括20种不同类型的图像，存放在20个文件夹中（如**Action**，**Affective**，**Art**……），因此分析结果时，既可以给出总体性能，又可以按类型进行分析。
+每个数据集中，待检测图像为人眼直接观察的彩色图像，保存在**Stimuli**文件夹；对应的显著图(即ground truth)为相同尺寸的灰度图像，颜色越亮的区域代表显著性越强，保存在**FIXATIONMAPS**文件夹。考虑到图像内容可能对结果产生影响，每个数据集都包括20种不同类型的图像，存放在20个文件夹中（如**Action**，**Affective**，**Art**……），因此分析结果时，既可以给出总体性能，又可以按类型进行分析。
 
 ![](/3-Saliency-Example.png)
 
 ### 性能指标
 
-相关系数（CC）、KL散度，或其他衡量显著性图像相似程度的指标等。
+主观指标：预测显著图与ground truth显著图主观上对比。
+客观指标：相关系数（CC）、KL散度（指标函数在metric.py文件中，可直接调用，内有使用说明），或其他衡量显著性图像相似程度的指标等。
 
 ## 数据获取
 
@@ -71,16 +72,19 @@ DropBox下载：https://www.dropbox.com/sh/i79cbllw6763zxg/AAA3-jPaRlYHMvsMyRbtR
 1、问题描述  
 2、实验模型原理和概述  
 3、实验模型结构和参数  
-4、实验结果分析（包含训练集和测试集里的测试结果）,要求列举出一些**失败案例**并分析。  
+4、实验结果分析（包含训练集和测试集里的测试结果）,要求列举出一些**失败案例**并分析，分析指标提供越多，图表分析越详尽得分会考虑越高。  
 5、总结  
 
 ## 作业提交
 
-将模型代码、实验报告、测试结果打包，命名格式：学号_姓名_选题
+将模型代码、实验报告、测试结果、展示PPT打包，命名格式：学号_姓名_选题
 
-选题 1 或 2： 第13周周二（12月4日）前提交，13周周三展示
+选题 1 或 2： 第13周周一前提交，13周周三展示
 
-选题 3：第14周周二（12月11日）前提交，14周周三展示
+选题 3：第14周周一前提交，14周周三展示
 
-提交邮箱：tianyili@buaa.edu.cn
+提交邮箱：13021041@buaa.edu.cn
 
+## 疑问咨询
+
+请加助教微信：yangliTXWD 或者在群里@助教。
