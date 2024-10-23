@@ -1,14 +1,16 @@
 # ML-Class-Assignment
-The assignment of machine learning course for post-graduates at BUAA EE, 2019.
+2024机器学习基础课程大作业
 
 ## 任务描述
-本学期的机器学习大作业包括三个题目：手写数字识别、医学图像检测以及图像显著性检测，任选其一完成即可。由于难度不同，每题设置了不同的最高分：
+本学期的机器学习大作业包括四个题目：手写数字识别、医学图像检测以及图像显著性检测，任选其一完成即可。由于难度不同，每题设置了不同的最高分：
 
 1、手写数字识别：机器学习经典问题，在灰度图像中识别10类手写数字，属于分类问题。最高分90。
 
 2、医学图像检测：利用彩色眼底图像判断是否患病，属于分类问题。最高分95。
 
 3、图像显著性预测：在彩色图像中，预测人眼容易关注的区域（输出显著性图），属于回归问题。最高分100。
+
+4、彩色图像生成：设计并训练一个生成网络，生成彩色图像。可以选择使用GAN、VAE或其他生成模型，目标是从随机噪声生成与训练数据分布相似的彩色图像。最高分100分。
 
 ## 作业内容
 
@@ -59,13 +61,28 @@ The assignment of machine learning course for post-graduates at BUAA EE, 2019.
 主观指标：预测显著图与ground truth显著图主观上对比。
 客观指标：相关系数（CC）、KL散度（指标函数在metric.py文件中，可直接调用，内有使用说明），或其他衡量显著性图像相似程度的指标等。
 
+## 题目四：彩色图像生成
+
+### 数据文件
+CIFAR-10 是一个用于图像分类任务的广泛使用的数据集，包含 10 个不同类别的彩色图片。每个类别包含 6000 张图片，总共 60000 张图片，大小为 32x32 像素，分为 50000 张训练图片和 10000 张测试图片。这个数据集在机器学习和计算机视觉任务中非常常见，特别是用来训练和测试卷积神经网络（CNN）以及生成对抗网络（GAN）等模型。
+CIFAR-10 的类别包括：飞机（airplane）、汽车（automobile）、鸟类（bird）、猫（cat）、鹿（deer）、狗（dog）、青蛙（frog）、马（horse）、船（ship）、卡车（truck）。分析结果时，既可以给出总体性能，又可以按类型进行分析。
+
+![](/4-CIFAR10-Example.png)
+
+### 性能指标
+主观指标：生成图像质量主观评价，对比数据集中的真实图像。
+客观指标：使用Inception Score（IS）和Frechet Inception Distance（FID）等评价指标，分析生成图像的质量。
+
+
 ## 数据获取
-
+前三个题目的数据集可以通过以下链接获取：
 百度云盘下载：https://pan.baidu.com/s/1mOCFxATcCkHGbK8Vdtv5yQ
-
 DropBox下载：https://www.dropbox.com/sh/i79cbllw6763zxg/AAA3-jPaRlYHMvsMyRbtRRmaa?dl=0
-
 两种途径下载后文件相同，任选其一即可。
+
+第四个题目的数据集可以通过以下代码获取：
+from torchvision.datasets import CIFAR10
+dataset = CIFAR10(root='./CIFARdata', download=True, transform=transforms.ToTensor())
 
 ## 报告格式
 作业报告格式包含：  
