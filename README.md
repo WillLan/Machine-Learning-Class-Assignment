@@ -72,7 +72,7 @@ CIFAR-10 的类别包括：飞机（airplane）、汽车（automobile）、鸟�
 ![](/4-CIFAR10-Example.png)
 
 ### 性能指标
-主观指标：生成图像质量主观评价，对比数据集中的真实图像。
+主观指标：生成图像质量主观评价，对比数据集中的真实图像。报告中可以给出随着训练迭代轮数增加，生成图像结果的变化情况。
 
 客观指标：使用Inception Score（IS）和Frechet Inception Distance（FID）等评价指标，分析生成图像的质量。
 
