@@ -88,10 +88,11 @@ DropBox下载：https://www.dropbox.com/sh/i79cbllw6763zxg/AAA3-jPaRlYHMvsMyRbtR
 
 
 第四个题目的数据集可以通过以下代码获取：
-'''python
+
+```python
 from torchvision.datasets import CIFAR10
 dataset = CIFAR10(root='./CIFARdata', download=True, transform=transforms.ToTensor())
-'''
+```
 
 ## 报告格式
 作业报告格式包含：  
