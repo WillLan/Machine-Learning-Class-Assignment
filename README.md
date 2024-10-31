@@ -85,23 +85,14 @@ def fidelity metric(genereated_images_path, real_images_path):
 isc: inception score,
 kid: kernel inception distance
 fid: frechet inception distance
-ppl: perceptual path length
-prc: perceptual path length
 """
-  isc_flag = False
-  fid_flag = False
-  kid_flag = False
-  prc_flag = False
-  ppl_flag = False
-  metrics_dict = torch_fidelity.calculate metrics(
+  metrics_dict = torch-fidelity.calculate metrics(
     input1=genereated_images_path,
     input2=real_images_path,
     cuda=True,
-    isc=isc_flag,
-    fid=fid_flag,
-    kid=kid_flag,
-    prc=prc_flag,
-    ppl=ppl_flag,
+    isc=True,
+    fid=True,
+    kid=True,
     verbose=False
   )
   return metrics_dict
