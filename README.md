@@ -82,11 +82,11 @@ pip install torch-fidelity
 def fidelity metric(genereated_images_path, real_images_path):
 """
 使用fidelity package计算所有的生成相关的指标，输入生成图像路径和真实图像路径
-isc: inception score,
+isc: inception score
 kid: kernel inception distance
 fid: frechet inception distance
 """
-  metrics_dict = torch-fidelity.calculate metrics(
+  metrics_dict = torch_fidelity.calculate_metrics(
     input1=genereated_images_path,
     input2=real_images_path,
     cuda=True,
