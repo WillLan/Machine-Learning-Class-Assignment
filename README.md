@@ -76,6 +76,34 @@ CIFAR-10 的类别包括：飞机（airplane）、汽车（automobile）、鸟�
 
 客观指标：使用Inception Score（IS）和Frechet Inception Distance（FID）等评价指标，分析生成图像的质量。
 
+```python
+def fidelity metric(genereated images path, real images path):
+"""
+使用fidelity package计算所有的生成相关的指标:
+isc: inception score,
+kid: kernel inception distance
+fid: frechet inception distance
+ppl: perceptual path length
+prc: perceptual path length
+"""
+  isc_flag = False
+  fid_flag = False
+  kid_flag = False
+  prc_flag = False
+  ppl_flag = False
+  metrics dict = torch fidelity.calculate metrics(
+  input1=genereated images path,
+  input2=real images path,
+  cuda=True,
+  isc=isc_flag,
+  fid=fid_flag,
+  kid=kid_flag,
+  prc=prc_flag,
+  ppl=ppl_flag,
+  verbose=False
+  )
+  return metrics dict
+```
 
 ## 数据获取
 前三个题目的数据集可以通过以下链接获取：
