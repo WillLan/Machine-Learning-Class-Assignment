@@ -79,9 +79,9 @@ CIFAR-10 的类别包括：飞机（airplane）、汽车（automobile）、鸟�
 ```python
 pip install torch-fidelity
 
-def fidelity metric(genereated images path, real images path):
+def fidelity metric(genereated_images_path, real_images_path):
 """
-使用fidelity package计算所有的生成相关的指标:
+使用fidelity package计算所有的生成相关的指标，输入生成图像路径和真实图像路径
 isc: inception score,
 kid: kernel inception distance
 fid: frechet inception distance
@@ -93,9 +93,9 @@ prc: perceptual path length
   kid_flag = False
   prc_flag = False
   ppl_flag = False
-  metrics dict = torch fidelity.calculate metrics(
-    input1=genereated images path,
-    input2=real images path,
+  metrics_dict = torch_fidelity.calculate metrics(
+    input1=genereated_images_path,
+    input2=real_images_path,
     cuda=True,
     isc=isc_flag,
     fid=fid_flag,
@@ -104,7 +104,7 @@ prc: perceptual path length
     ppl=ppl_flag,
     verbose=False
   )
-  return metrics dict
+  return metrics_dict
 ```
 
 ## 数据获取
