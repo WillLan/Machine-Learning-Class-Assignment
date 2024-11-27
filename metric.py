@@ -26,8 +26,8 @@ def calc_cc_score(gtsAnn, resAnn):
 EPSILON = np.finfo('float').eps
 
 def KLD(p, q):
-    # q: Ground-truth saliency map
-    # p: Predicted saliency map
+    # q: Predicted saliency map
+    # p: Ground-truth saliency map
     p = normalize(p, method='sum')
     q = normalize(q, method='sum')
     return np.sum(np.where(p != 0, p * np.log((p+EPSILON) / (q+EPSILON)), 0))
